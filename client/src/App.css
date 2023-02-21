@@ -1,0 +1,47 @@
+.app {
+  padding: 10px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
+.title {
+  text-align: center;
+}
+
+.location-name {
+  display: inline-block;
+  padding: 0 5px;
+  color: darkblue;
+  font-weight: bold;
+}
+
+.weather-summary {
+  display: flex;
+}
+
+.weather-icon {
+  height: 70px;
+  flex-basis: 70px;
+}
+
+.params-list {
+  margin: 0;
+  list-style-type: none;
+}
+
+.params-list > li {
+  position: relative;
+}
+
+.params-list > li::before {
+  position: absolute;
+  left: -20px;
+  top: 7px;
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  background: darkblue;
+  content: '';
+}
